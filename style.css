@@ -1,1 +1,156 @@
+body{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #e2504c 12%, #ff6961 25%, #ff9688 25%, #ffbfb0 25%, #e2504c 13%);
+	animation: gradient 15s ease infinite;
+    height: 100vh;
+    background-size: 400% 400%;
+    font-family:'Segoe UI';
+}
 
+.web-title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.load-more-div {
+    align-items: center;
+    justify-content: center;
+}
+
+.type-display {
+    color: white;
+    margin: 25px;
+}
+
+.movie-title, .movie-votes {
+    color: white;
+}
+
+.title-search {
+    display: flex;
+}
+
+.thumbnail { 
+    z-index:999; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: black;
+    border: 2px solid black;
+} 
+
+.hidden {
+    display: none;
+}
+      
+/*change the number below to scale to the appropriate size*/ 
+.thumbnail:hover { 
+    transform: scale(1.1); 
+}
+
+form{
+    float: right;
+}
+
+#text-query, #load-more-movies-btn {
+    width: 200px;
+    height: 50px;
+}
+
+.close {
+    font-size: 45px;
+    font-weight: 600;
+    float: right;
+    margin-right: 5px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1; 
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+input[type="text"] {
+    outline: 0;
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    appearance: none;
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+    color: white;
+}
