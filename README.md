@@ -41,10 +41,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 - [ ] Implement anything else that you can get done to improve the app functionality!
 
 ### Walkthrough Video
-
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
-![walkthrough](https://media3.giphy.com/media/yVKmIdmf8Lubsg49Fh/giphy.gif?cid=790b76110e896fe601ec52ab85cb04dc243582dacf0f7bc2&rid=giphy.gif)
+![walkthrough](https://github.com/LRibeiroVidal/SITEprojectOne/blob/main/ezgif.com-gif-maker.gif)
 
 ### Reflection
 
